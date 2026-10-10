@@ -1,0 +1,31 @@
+{
+  "name": "ai-cost-routing-autopilot",
+  "version": "1.0.0",
+  "description": "LLM cost analytics and intelligent routing system for budgets, token usage, latency-aware model selection, quota enforcement, and resilient provider fallback.",
+  "private": true,
+  "scripts": {
+    "build:backend": "npm --prefix backend run build",
+    "build:frontend": "npm --prefix frontend run build",
+    "build": "npm --prefix backend run build && npm --prefix frontend run build",
+    "test:backend": "npm --prefix backend test",
+    "test:frontend": "npm --prefix frontend test",
+    "test": "npm --prefix backend test && npm --prefix frontend test",
+    "lint:backend": "npm --prefix backend run lint",
+    "lint:frontend": "npm --prefix frontend run lint",
+    "lint": "npm --prefix backend run lint && npm --prefix frontend run lint"
+  },
+  "keywords": [
+    "llm-cost-routing",
+    "ai-engineering",
+    "cost-autopilot",
+    "model-routing",
+    "token-analytics",
+    "budget-enforcement",
+    "model-regression",
+    "nestjs",
+    "nextjs",
+    "mongodb"
+  ],
+  "author": "Rishank Kesarwani",
+  "license": "UNLICENSED"
+}

@@ -1,0 +1,4 @@
+# Prevent backend files from invalidating Vercel frontend builds
+backend/
+dist/
+*.log
