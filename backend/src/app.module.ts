@@ -13,6 +13,7 @@ import { RoutingModule } from './modules/routing/routing.module';
 import { QualityGatesModule } from './modules/quality-gates/quality-gates.module';
 import { IntegrationsModule } from './modules/integrations/integrations.module';
 import { SeedModule } from './modules/seed/seed.module';
+import { AppController } from './app.controller';
 
 @Module({
   imports: [
@@ -51,5 +52,6 @@ import { SeedModule } from './modules/seed/seed.module';
     QualityGatesModule,
     SeedModule,
   ],
+  controllers: [AppController],
 })
 export class AppModule {}

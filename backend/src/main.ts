@@ -44,7 +44,7 @@ async function bootstrap() {
   app.useGlobalInterceptors(new LoggingInterceptor());
 
   app.setGlobalPrefix('api/v1', {
-    exclude: ['health', 'health/ready'],
+    exclude: ['health', 'health/ready', '/'],
   });
 
   const swaggerConfig = new DocumentBuilder()

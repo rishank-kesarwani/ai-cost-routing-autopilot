@@ -41,10 +41,16 @@ export class AllExceptionsFilter implements ExceptionFilter {
       message = exception.message;
     }
 
-    this.logger.error(
-      `[${correlationId}] ${request.method} ${request.url} Status: ${status} - Error: ${message}`,
-      exception instanceof Error ? exception.stack : undefined,
-    );
+    if (status >= 500) {
+      this.logger.error(
+        `[${correlationId}] ${request.method} ${request.url} Status: ${status} - Error: ${message}`,
+        exception instanceof Error ? exception.stack : undefined,
+      );
+    } else {
+      this.logger.warn(
+        `[${correlationId}] ${request.method} ${request.url} Status: ${status} - ${message}`,
+      );
+    }
 
     response.status(status).json({
       success: false,
