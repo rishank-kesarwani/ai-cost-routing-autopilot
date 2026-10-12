@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { Navbar } from '@/components/Navbar';
+import { LogoIcon } from '@/components/Logo';
 import { apiClient } from '@/lib/api';
 import {
   Settings,
@@ -45,6 +46,31 @@ export default function SettingsPage() {
       />
 
       <div className="p-6 max-w-7xl mx-auto space-y-6">
+        {/* System Identity Card */}
+        <div className="glass-card p-5 rounded-xl border border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div className="flex items-center gap-4">
+            <LogoIcon size="md" />
+            <div>
+              <div className="flex items-center gap-2">
+                <h3 className="text-sm font-semibold text-white">
+                  AI Cost & Routing Autopilot
+                </h3>
+                <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 font-semibold">
+                  v1.0.0 Production
+                </span>
+              </div>
+              <p className="text-xs text-slate-400 mt-1">
+                Autonomous multi-tenant LLM gateway, dynamic token pricing & tier-adaptive quality routing
+              </p>
+            </div>
+          </div>
+          <div className="flex items-center gap-2 text-xs font-mono text-slate-400">
+            <span className="px-2.5 py-1 rounded bg-slate-900 border border-slate-800 text-slate-300">
+              Protocol: REST/v1
+            </span>
+          </div>
+        </div>
+
         {/* Microservice Integrations Status */}
         <div className="glass-card p-6 rounded-xl border border-slate-800 space-y-4">
           <div className="flex items-center justify-between">

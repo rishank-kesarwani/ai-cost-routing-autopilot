@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { Database, Shield, RefreshCw } from 'lucide-react';
+import { LogoIcon } from '@/components/Logo';
 
 export function Navbar({ title, subtitle }: { title: string; subtitle?: string }) {
   const [tenant, setTenant] = useState('tenant-acme');
@@ -31,15 +32,20 @@ export function Navbar({ title, subtitle }: { title: string; subtitle?: string }
 
   return (
     <header className="h-16 border-b border-slate-800/80 bg-[#090d16]/80 backdrop-blur-md px-6 flex items-center justify-between sticky top-0 z-20">
-      <div>
-        <h1 className="text-base font-semibold text-white tracking-tight">
-          {title}
-        </h1>
-        {subtitle && (
-          <p className="text-xs text-slate-400 font-normal">
-            {subtitle}
-          </p>
-        )}
+      <div className="flex items-center gap-3">
+        <div className="md:hidden flex-shrink-0">
+          <LogoIcon size="xs" />
+        </div>
+        <div>
+          <h1 className="text-base font-semibold text-white tracking-tight">
+            {title}
+          </h1>
+          {subtitle && (
+            <p className="text-xs text-slate-400 font-normal">
+              {subtitle}
+            </p>
+          )}
+        </div>
       </div>
 
       <div className="flex items-center gap-3">

@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { Navbar } from '@/components/Navbar';
+import { LogoIcon } from '@/components/Logo';
 import { apiClient } from '@/lib/api';
 import {
   DollarSign,
@@ -62,6 +63,41 @@ export default function OverviewPage() {
       />
 
       <div className="p-6 max-w-7xl mx-auto space-y-6">
+        {/* Autopilot Brand & Status Card */}
+        <div className="glass-card p-5 rounded-2xl border border-slate-800 bg-gradient-to-r from-slate-900/90 via-[#0a1122]/90 to-slate-900/90 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+          <div className="flex items-center gap-4">
+            <LogoIcon size="md" />
+            <div>
+              <div className="flex items-center gap-2">
+                <h2 className="text-base font-bold text-white tracking-tight">
+                  Cost & Routing Autopilot
+                </h2>
+                <span className="text-[11px] font-mono px-2 py-0.5 rounded-full bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 flex items-center gap-1.5 font-medium">
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                  Live Mesh Active
+                </span>
+              </div>
+              <p className="text-xs text-slate-400 mt-0.5">
+                Dynamic cost routing, token ledger monitoring & quality-aware fallback across frontier & open models
+              </p>
+            </div>
+          </div>
+          <div className="flex items-center gap-2.5 flex-shrink-0">
+            <Link
+              href="/simulator"
+              className="px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-medium transition shadow-sm"
+            >
+              Simulate Route
+            </Link>
+            <Link
+              href="/budgets"
+              className="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-medium border border-slate-700 transition"
+            >
+              Budgets
+            </Link>
+          </div>
+        </div>
+
         {/* Anomaly Notice Banner */}
         {anomalies && anomalies.length > 0 && (
           <div className="p-4 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-start gap-3.5">

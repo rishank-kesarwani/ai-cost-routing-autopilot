@@ -12,8 +12,8 @@ import {
   ShieldCheck,
   AlertTriangle,
   Settings,
-  Sparkles,
 } from 'lucide-react';
+import { Logo } from '@/components/Logo';
 
 const navigation = [
   { name: 'Overview', href: '/', icon: LayoutDashboard },
@@ -32,18 +32,8 @@ export function Sidebar() {
   return (
     <aside className="w-64 flex-shrink-0 bg-[#090d16] border-r border-slate-800/80 flex flex-col h-screen sticky top-0 z-30">
       {/* Brand Header */}
-      <div className="h-16 flex items-center px-6 border-b border-slate-800/80 gap-3">
-        <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-indigo-500 to-cyan-400 flex items-center justify-center text-white shadow-lg shadow-indigo-500/25">
-          <Sparkles className="w-4 h-4" />
-        </div>
-        <div className="flex flex-col">
-          <span className="font-bold text-sm tracking-wide text-white">
-            Cost Autopilot
-          </span>
-          <span className="text-[11px] text-slate-400 tracking-wider uppercase font-mono">
-            Routing & Budget
-          </span>
-        </div>
+      <div className="h-16 flex items-center px-5 border-b border-slate-800/80">
+        <Logo size="sm" withLink={true} subtitle="Routing & Spend Autopilot" />
       </div>
 
       {/* Nav Items */}
