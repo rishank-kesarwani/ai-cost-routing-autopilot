@@ -45,7 +45,7 @@ export default function SettingsPage() {
         subtitle="Versioned model pricing rates, SLA benchmarks and microservice ecosystem connectivity"
       />
 
-      <div className="p-6 max-w-7xl mx-auto space-y-6">
+      <div className="p-4 sm:p-6 max-w-7xl mx-auto space-y-6">
         {/* System Identity Card */}
         <div className="glass-card p-5 rounded-xl border border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div className="flex items-center gap-4">

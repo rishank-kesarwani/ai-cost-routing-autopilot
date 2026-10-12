@@ -62,7 +62,7 @@ export default function OverviewPage() {
         subtitle="Control LLM spend without losing sight of quality, latency, or reliability"
       />
 
-      <div className="p-6 max-w-7xl mx-auto space-y-6">
+      <div className="p-4 sm:p-6 max-w-7xl mx-auto space-y-6">
         {/* Autopilot Brand & Status Card */}
         <div className="glass-card p-5 rounded-2xl border border-slate-800 bg-gradient-to-r from-slate-900/90 via-[#0a1122]/90 to-slate-900/90 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
           <div className="flex items-center gap-4">

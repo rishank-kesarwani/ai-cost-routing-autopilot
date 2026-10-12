@@ -42,7 +42,7 @@ export default function IncidentsAndAuditPage() {
         subtitle="Statistical spend anomaly detection, fallback activations and full decision audit logs"
       />
 
-      <div className="p-6 max-w-7xl mx-auto space-y-6">
+      <div className="p-4 sm:p-6 max-w-7xl mx-auto space-y-6">
         {/* Statistical Anomaly Alerts */}
         <div className="glass-card p-6 rounded-xl border border-slate-800 space-y-4">
           <div className="flex items-center justify-between">

@@ -58,7 +58,7 @@ export default function RouteSimulatorPage() {
         subtitle="Dry-run simulator evaluating candidate models against cost, latency, provider and quality gates"
       />
 
-      <div className="p-6 max-w-7xl mx-auto space-y-6">
+      <div className="p-4 sm:p-6 max-w-7xl mx-auto space-y-6">
         {/* Scenario Input Card */}
         <div className="glass-card p-6 rounded-xl border border-slate-800">
           <div className="flex items-center gap-2 mb-4">

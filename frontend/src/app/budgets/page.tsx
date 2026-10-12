@@ -70,7 +70,7 @@ export default function BudgetPoliciesPage() {
         subtitle="Configure daily, monthly, and feature-scoped budgets with hard block protection"
       />
 
-      <div className="p-6 max-w-7xl mx-auto space-y-6">
+      <div className="p-4 sm:p-6 max-w-7xl mx-auto space-y-6">
         {/* Header action */}
         <div className="flex items-center justify-between">
           <div>

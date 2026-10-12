@@ -61,7 +61,7 @@ export default function UsageExplorerPage() {
         subtitle="Immutable ledger of token measurements, latency SLA tracking and cost attribution"
       />
 
-      <div className="p-6 max-w-7xl mx-auto space-y-6">
+      <div className="p-4 sm:p-6 max-w-7xl mx-auto space-y-6">
         {/* Filter bar */}
         <div className="glass-card p-4 rounded-xl border border-slate-800 flex flex-wrap items-center justify-between gap-4">
           <div className="flex flex-wrap items-center gap-3">

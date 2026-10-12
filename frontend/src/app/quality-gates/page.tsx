@@ -52,7 +52,7 @@ export default function QualityGatesPage() {
         subtitle="Verification against Model Regression Detection platform with strict fail-closed enforcement"
       />
 
-      <div className="p-6 max-w-7xl mx-auto space-y-6">
+      <div className="p-4 sm:p-6 max-w-7xl mx-auto space-y-6">
         {/* Release Gate Form */}
         <div className="glass-card p-6 rounded-xl border border-slate-800">
           <div className="flex items-center justify-between mb-4">
